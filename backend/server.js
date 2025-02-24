@@ -20,7 +20,7 @@ app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
 app.use(cors({
-  origin: ["http://localhost:3000", "https://picapicaa.netlify.app"], 
+  origin: ["http://localhost:3000", "https://pictbooth.netlify.app"], 
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
@@ -153,7 +153,7 @@ app.post("/send-photo-strip", async (req, res) => {
       from: process.env.EMAIL,
       to: recipientEmail,
       subject: "Your Photo Strip 🎉",
-      text: "Thanks for using Picapica!",
+      text: "Thanks for using pictbooth!",
       attachments: [{
         filename: "photo-strip.png",
         content: imageData.split("base64,")[1],
