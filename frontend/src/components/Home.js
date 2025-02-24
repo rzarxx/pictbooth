@@ -6,14 +6,13 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <header className="header">
     <div className="background-gradient h-screen flex  flex-col justify-center items-center text-center">
       <div className="home-container">
         <h1 className="text-5xl font-bold text-pink-600 mb-4">PictBooth</h1>
         <p className="text-lg text-gray-700 mb-6">
           Welcome to Rezz' photobooth! This is your personal photobooth at home.
         </p>      
-          </header>
+          
         <img src="/photobooth-strip.png" alt="photobooth strip" className="photobooth-strip"/>
         
         <button onClick={() => navigate("/welcome")} className="bg-pink-500 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition"

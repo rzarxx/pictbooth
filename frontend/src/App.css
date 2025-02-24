@@ -47,33 +47,11 @@ body {
   color: white;
 }
 
-/* Tambahkan padding pada header untuk menghindari tabrakan dengan navbar */
-header {
-  padding-top: 60px; /* Sesuaikan dengan tinggi navbar */
-  margin-bottom: 20px;
-}
-
-/* Media queries untuk responsivitas */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 8px;
-  }
-
-  .navbar a {
-    padding: 8px;
-  }
-
-  header {
-    padding-top: 100px; /* Sesuaikan dengan tinggi navbar pada layar kecil */
-  }
-
 .main-content {
   margin-top: 60px;
 }
 
-/* .paypal-form {
+/*.paypal-form {
   position: relative;
   display: inline-block;
 }
