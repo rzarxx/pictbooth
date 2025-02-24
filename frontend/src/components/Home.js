@@ -31,7 +31,6 @@ const Home = () => {
             <p>© 2025 Rezz Dev. All Rights Reserved.</p>
         </footer>
       </div>
-    </div>
     );
   };
 
