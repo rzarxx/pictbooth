@@ -1,0 +1,810 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 10px;
+  background: none !important;
+  border-bottom: 2px solid #ddd;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+  background: none !important;
+}
+
+.navbar a:hover {
+  background: none !important;
+  border-radius: 20px;
+}
+
+.navbar a:active {
+  background: none !important;
+  color: white;
+}
+
+.main-content {
+  margin-top: 60px;
+}
+
+.paypal-form {
+  position: relative;
+  display: inline-block;
+}
+
+.paypal-form a::after {
+  content: "Support me with a donation!";
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.paypal-form a:hover::after {
+  opacity: 1;
+}
+
+.paypal-button {
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.paypal-button:hover {
+  transform: scale(1.1);
+}
+
+/* Privacy Policy */
+.background-gradient {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 153, 178, 0.5) 20%,
+    rgba(255, 240, 245, 0.9) 40%,
+    rgba(255, 250, 250, 1) 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  animation: pulse 5s infinite alternate ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+}
+
+
+.privacy-container h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+.privacy-container p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+
+}
+
+
+.privacy-container a:hover {
+  color: pink; /* Pink hover effect */
+  text-decoration: underline;
+}
+
+/* Contact */
+.contact-container {
+  width: 100%;
+  padding: 20px;
+  height: 100vh;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 153, 178, 0.5) 20%,
+    rgba(255, 240, 245, 0.9) 40%,
+    rgba(255, 250, 250, 1) 70%); 
+  overflow: hidden;
+  animation: pulse 5s infinite alternate ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Contact Form */
+.contact-form {
+  width: 400px;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.contact-form button:hover {
+  background-color: #ff69b4;
+  color: white;
+  transform: scale(1.05);
+}
+
+.status-message {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: pink;
+}
+
+
+
+
+@keyframes pulse {
+  0% { background-size: 100% 100%; }
+  50% { background-size: 130% 130%; }
+  100% { background-size: 100% 100%; }
+}
+
+.background-gradient {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 153, 178, 0.5) 20%,
+    rgba(255, 240, 245, 0.9) 40%,
+    rgba(255, 250, 250, 1) 70%); 
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  animation: pulse 5s infinite alternate ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+.photobooth-strip {
+  border-radius: 0px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photobooth-strip:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+/* Countdown Timer */
+.countdown {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: red;
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 10px;
+  animation: countdown-animation 0.5s ease-in-out alternate infinite;
+}
+
+/* Photobooth Strip */
+.photobooth-strip {
+  width: 150px; 
+  max-width: 300px; 
+  height: auto; 
+  display: block;
+  margin: 10px auto; 
+}
+
+/* Photobooth Layout */
+.photo-booth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 10px;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 153, 178, 0.5) 20%,
+    rgba(255, 240, 245, 0.9) 40%,
+    rgba(255, 250, 250, 1) 70%); 
+}
+
+/* Camera Container */
+.camera-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  max-width: 700px;
+  height: 450px;
+  position: relative;
+}
+
+.filter-prompt {
+  text-align: center;
+  margin: 20px 0 15px 0;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px; 
+}
+
+.controls {
+  margin-bottom: 25px; 
+}
+
+/* live cam*/
+.video-feed {
+  width: 600px;
+  height: 450px;
+  object-fit: cover; 
+  transform: scaleX(-1); 
+  border-radius: 12px;
+  border: 3px solid black;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.camera-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  margin: 10px;
+  padding: 12px 20px;
+}
+
+
+
+/* Animation */
+.animate {
+  animation: pop 0.5s ease-in-out alternate infinite;
+}
+
+/* Photo Strip Preview */
+.photo-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 0px;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 153, 178, 0.5) 20%,
+    rgba(255, 240, 245, 0.9) 40%,
+    rgba(255, 250, 250, 1) 70%); 
+}
+
+.photo-preview canvas {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.photo-preview img {
+  width: 100%;
+  height: auto; 
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.control-section {
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.control-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.color-options, .frame-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.section-title {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 15px 0 8px 0;
+  text-align: center;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.email-section {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.email-section input {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.email-section input:focus {
+  border-color: #bdd0b7;
+  outline: none;
+}
+
+.status-message {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Improve photo strip display */
+.photo-strip {
+  margin: 30px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* Fix Photo Strip Squishing */
+.photo-strip {
+  display: block;
+  max-width: 400px;
+  width: 100%; 
+  height: auto;
+  margin-top: -10px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+  height: 100vh;          
+  padding: 0 20px;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 153, 178, 0.5) 20%,
+    rgba(255, 240, 245, 0.9) 40%,
+    rgba(255, 250, 250, 1) 60%);
+  display: flex;
+}
+
+/* test */
+
+.welcome-container h1 {
+  margin-bottom: 80px;
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.welcome-container p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  max-width: 600px;
+  color: #000;
+}
+
+
+.welcome-container button {
+  margin-top: 1.5rem;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+.welcome-container button:hover {
+  background-color: #ff69b4;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Fix Capture Button Placement */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
+  position: relative; 
+  z-index: 10; 
+  width: 100%;
+}
+
+/* General Button Styling */
+button {
+  background: transparent;
+  color: black;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:not(:disabled):hover {
+  background: linear-gradient(135deg, #ffc0cb, #ea909f);
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  border-color: #999;
+  color: #666;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ffc0cb, #ea909f) !important;
+  color: white !important;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+  background: linear-gradient(135deg, #ea909f, #ffc0cb);
+}
+
+/* Color Picker Options */
+.color-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Fix Layout Between Camera and Photo Strip */
+.photo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px; 
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Fix Photo Strip Thumbnails */
+.preview-side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  min-width: 120px;
+  margin-left: 20px;
+  margin-top: -120px; 
+}
+
+
+.side-preview {
+  width: 160px;
+  height: 120px;
+  object-fit: cover; 
+  border-radius: 0px;
+  border: 1px solid #000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+
+/* Hide Captured Image Under Camera */
+.hidden {
+  display: none !important;
+}
+
+/* Footer Styling */
+footer {
+  display: block;
+  padding: 10px;
+  background: transparent;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 0;
+  color: #666;
+}
+
+
+footer p:first-of-type {
+  margin-bottom: 15px;  /* Space between "made by" and copyright */
+}
+
+/* Footer Link */
+footer a {
+  color: pink;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: 2px solid pink;
+  border-radius: 20px;
+  padding: 5px 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure the Footer Stays at the Bottom */
+.home-container {
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+  min-height: calc(100vh - 80px);
+}
+
+@keyframes titlePulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.home-container h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  animation: titlePulse 3s infinite ease-in-out;
+  margin-bottom: 20px;
+}
+
+/* Fix Horizontal Scrolling Issue */
+.container, .navbar, .photo-container, .camera-container {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* email */
+.email-section {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 250px;  /* Added max-width for better layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-section input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  outline: none;
+}
+
+.email-section p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .camera-container {
+    width: 100%;
+    height: 300px; 
+    padding: 10px;
+  }
+
+ 
+  .video-feed {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    transform: scaleX(-1); /* Mirror effect */
+    border-radius: 12px;
+    border: 3px solid black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .controls, .filters {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .controls button {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  .privacy-container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .privacy-container h1 {
+    font-size: 2rem;
+  }
+
+  .privacy-container p {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 20px;
+    background: none !important;
+  }
+
+  .navbar a {
+    padding: 10px;
+    font-size: 1rem;
+    background: none !important;
+  }
+
+  .contact-form {
+    width: 90%;
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+
+
+}
+
+/* Animations */
+@keyframes pop {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.2); opacity: 0.8; }
+}
+
+@keyframes countdown-animation {
+  from { opacity: 1; }
+  to { opacity: 0.5; }
+}
