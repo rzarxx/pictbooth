@@ -6,7 +6,6 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <br>
     <div className="background-gradient h-screen flex  flex-col justify-center items-center text-center">
       <div className="home-container">
         <h1 className="text-5xl font-bold text-pink-600 mb-4">PictBooth</h1>
@@ -31,6 +30,7 @@ const Home = () => {
             <p>© 2025 Rezz Dev. All Rights Reserved.</p>
         </footer>
       </div>
+    </div>
     );
   };
 
