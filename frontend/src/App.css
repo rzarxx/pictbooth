@@ -51,7 +51,7 @@ body {
   margin-top: 60px;
 }
 
-/*.paypal-form {
+.paypal-form {
   position: relative;
   display: inline-block;
 }
@@ -85,7 +85,7 @@ body {
 }
 
 .paypal-button:hover {
-  transform: scale(1.1); */
+  transform: scale(1.1);
 }
 
 /* Privacy Policy */
