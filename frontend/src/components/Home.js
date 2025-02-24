@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="background-gradient h-screen flex  flex-col justify-center items-center text-center">
       <div className="home-container">
-        <h1 className="text-5xl font-bold text-pink-600 mb-4">picapica</h1>
+        <h1 className="text-5xl font-bold text-pink-600 mb-4">PictBooth</h1>
         <p className="text-lg text-gray-700 mb-6">
           Welcome to Agnes' photobooth! This is your personal photobooth at home.
         </p>      

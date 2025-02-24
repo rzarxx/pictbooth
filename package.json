@@ -1,5 +1,5 @@
 {
-  "name": "picapica",
+  "name": "pictbooth",
   "version": "1.0.0",
   "description": "A simple web-based photo booth application built with **React** that captures images using a webcam, applies filters, and generates a downloadable photo strip!",
   "main": "index.js",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Agneswei/Picapica.git"
+    "url": "git+https://github.com/rza.rxx/pictbooth.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Agneswei/Picapica/issues"
+    "url": "https://github.com/rza.rxx/pictbooth/issues"
   },
-  "homepage": "https://github.com/Agneswei/Picapica#readme"
+  "homepage": "https://github.com/rza.rxx/pictbooth#readme"
 }

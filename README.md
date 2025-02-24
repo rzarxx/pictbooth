@@ -1,16 +1,16 @@
-# Picapica 📸
-![picapica](https://github.com/user-attachments/assets/4a6629c9-0c75-4a3a-a9f5-355712e2a372)
+# PictBooth 📸
+![PictBooth](https://github.com/user-attachments/assets/4a6629c9-0c75-4a3a-a9f5-355712e2a372)
 
 
 A simple **web-based photo booth** application built with **React** that captures images using a webcam, applies filters, and generates a downloadable photo strip!
 
 ### Where did the name come from?
-The name **Picapica** comes from a mix of:
+The name **PictBooth** comes from a mix of:
 - **"Picture"** - representing photography and capturing moments.
-- The **Picapica** is the sound that cameras make.
+- The **PictBooth** is the sound that cameras make.
 - **Pikachu's playful energy** - symbolizing the fun, fast, and energetic photos!
 
-Just like Pikachu, **Picapica** brings a spark of excitement to your photos! ⚡✨
+Just like Pikachu, **PictBooth** brings a spark of excitement to your photos! ⚡✨
 
 
 ## 🚀 Features
@@ -36,8 +36,8 @@ Just like Pikachu, **Picapica** brings a spark of excitement to your photos! ⚡
 **Steps to run locally**
 ```sh
 # Clone the repository
-git clone https://github.com/Agneswei/Picapica
-cd picapica/frontend
+git clone https://github.com/rza.rxx/pictbooth
+cd pictbooth/frontend
 
 # Install dependencies
 npm install
@@ -54,7 +54,7 @@ npm start
 4. **Apply Filters:** Select a **filter** to enhance the photos.
 5. **Download Photo Strip:** Once captured, click the **"Download"** button to save the final **photo strip** to your device.
 
-**Try it out live:** [PicaPica](https://picapicaa.netlify.app/).
+**Try it out live:** [PictBooth](https://pictbooth.netlify.app/).
 
 ## 🔧 Future Improvements
 - Add more filters (beautify, cute effects, and stickers)
@@ -65,7 +65,7 @@ npm start
 
 
 ### 📜 License
-MIT License © 2025 Agnes Wei
+MIT License © 2025 Rezz Dev
 
 ---
 Enjoy snapping fun pictures! 📷✨
